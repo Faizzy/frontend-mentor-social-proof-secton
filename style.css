@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg) right 100px bottom -200px ;
+    background-repeat: no-repeat;
+    /* background-color: rgba(0,0,0,0.1); */
+}
+
+
+.main-container {
+    padding: 80px 100px 0 100px;
+}
+
+
+
+.main-items {
+    margin: 50px;
+}
+
+
+.text-block {
+    display: flex;
+}
+
+    .para-text {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .main-para h3 {
+        font-family: 'Spartan', sans-serif;
+        color: hsl(300, 43%, 22%);
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .sub-para p {
+        font-family: 'Spartan', sans-serif;
+        color: hsl(300, 43%, 22%);
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+
+
+.rating-block {
+    display: flex;
+    margin-left: 100px;
+}
+
+.rating-star {
+    display: flex;
+    width: 450px;
+    height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    margin: 15px;
+}
+
+    .stars {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .stars li {
+        padding: 3px;
+    }
+
+    ul {
+        padding: 13px 0 0 40px;
+    }
+
+    .rating-text {
+        margin-left: 30px;
+        margin-top: 4px;
+        font-family: 'Spartan', sans-serif;
+        font-size: 0.8rem;
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        padding-top: 15px;
+    }
+
+
+.card1 , .card2, .card3 {
+    background-color: hsl(300, 43%, 22%);
+    width: 350px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.card2 {
+    margin-left: 35.25px;
+    margin-top: 20px;
+}
+.card3{
+    margin-left: 35.25px;
+    margin-top: 40px;
+}
+
+    .card1 img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .card2 img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .card3 img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+        .card-header {
+            display: flex;
+            margin: 10px 20px 10px 20px;
+            padding: 30px 10px 0 10px;
+        }
+
+        .user {
+            font-family: 'Spartan', sans-serif;
+            padding-left: 20px;
+        }
+
+        .username {
+            color: white;
+            font-weight: 700;
+            font-size: 0.7rem;
+            margin-top: 3px;
+        }
+
+        .user-text {
+            color: hsl(333, 80%, 67%);
+            font-size: 0.7rem;
+            margin-top: 7px;
+            font-weight: 400;
+        }
+
+        .card-para {
+            color: white;
+            font-family: 'Spartan',sans-serif;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 2;
+            padding: 15px 20px 10px 20px;
+            margin: 0 10px 10px 10px;
+        }
+
+.rating-card2 {
+    margin-left: 40px;
+}
+
+.rating-card3 {
+    margin-left: 80px;
+}
+
+.card-block {
+    display: flex;
+    margin: 50px 0 0 0;
+}
+
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .main-items {
+        margin: 50px 0 50px 0;
+    }
+
+    .text-block {
+        display: block;
+    }
+
+        .main-para {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-para h3 {
+            font-size: 2rem;
+        }
+
+        .sub-para {
+            text-align: center;
+        }
+
+        .sub-para p {
+            font-size: 15px;
+        }
+
+    .para-text {
+        width: auto;
+    }
+
+    .rating-block {
+        margin: 30px 0 0 0;
+    }
+
+        .rating-star {
+            display: block;
+        }
+
+        .stars {
+            padding: 10px 0 0 100px;
+        }
+
+        .rating-text {
+            padding: 5px  0 0 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        .rating-star {
+            width: 300px;
+            height: 70px;
+            border-radius: 5px;
+        }
+
+        .rating-card2, .rating-card3 {
+            margin: 0;
+        }
+
+        .stars {
+            width: 300px;
+        }
+
+    .card-block {
+        display: block;
+    }
+
+        .card2, .card3 {
+            margin: 0;
+        }
+
+    .card1, .card2, .card3 {
+        width: 330px;
+    }
+
+}
